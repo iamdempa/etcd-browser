@@ -1,7 +1,6 @@
 FROM ubuntu:14.04
 
-MAINTAINER Christoph Wiechert <wio@psitrax.de>
-MAINTAINER https://github.com/henszey
+MAINTAINER Jananath Banuka
 
 RUN apt-get update
 ENV DEBIAN_FRONTEND noninteractive

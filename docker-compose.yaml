@@ -1,0 +1,10 @@
+version: "3.2"
+
+services:
+
+  etcd-ui:
+    
+    build: .
+
+    ports:
+      - "8080:8000"
