@@ -8,12 +8,12 @@ app.controller('NodeCtrl', ['$scope','$http','$cookies', function($scope,$http,$
   if($cookies.urlPrefix){
     $scope.urlPrefix = $cookies.urlPrefix;
   } else {
-    $scope.urlPrefix = ('https:' == document.location.protocol ? 'https://' : 'http://') + document.location.host;
+    $scope.urlPrefix = ('https:' == document.location.protocol ? '' : '') + document.location.host;
   }
 
   $scope.getPrefix = function() {
     splitted = $scope.urlPrefix.split("/")
-    return splitted[0] + "//" + splitted[2]
+    return splitted[0] + "" + splitted[2]
   }
 
 
